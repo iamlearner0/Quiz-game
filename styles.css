@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  background: linear-gradient(70deg, #42275a, #734b6d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.start--page,
+.quiz--section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start--page--container {
+  width: 80%;
+  max-width: 30rem;
+  padding: 2rem;
+  background-color: #734b6d;
+  color: #fff;
+  text-align: center;
+}
+
+.start--page h2 {
+  font-size: 3rem;
+  color: #42275a;
+}
+
+.start--page p {
+  margin: 1.3rem 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.start--btn,
+.next--btn {
+  padding: 0.8rem 1.3rem;
+  background-color: #42275a;
+  color: #fff;
+  border-style: none;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font: inherit;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.start--btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #42275a;
+}
+
+.quiz--container {
+  width: 90%;
+  max-width: 25rem;
+  padding: 1.5rem;
+  background-color: #734b6d;
+  color: #fff;
+}
+
+.quiz--container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #42275a;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.answer--btn {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #fff;
+  color: #42275a;
+  margin: 0.8rem 0;
+  border-radius: 0.2rem;
+  border-style: none;
+  font-size: 0.8rem;
+  font: inherit;
+}
+
+.answer--btn:hover:not([disabled]) {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #fff;
+  outline: none;
+}
+
+.answer--btn:disabled {
+  cursor: no-drop;
+}
+
+.next--btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.chosen {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 auto;
+  display: none;
+}
+
+.correct {
+  background-color: #76f276;
+}
+
+.incorrect {
+  background-color: rgb(241, 117, 117);
+}
